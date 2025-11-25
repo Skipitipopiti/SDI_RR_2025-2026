@@ -1,0 +1,27 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+# Toolchain: GNU Tools for STM32 (12.3.rel1)
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../ThreadSafe/newlib_lock_glue.c 
+
+OBJS += \
+./ThreadSafe/newlib_lock_glue.o 
+
+C_DEPS += \
+./ThreadSafe/newlib_lock_glue.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+ThreadSafe/%.o ThreadSafe/%.su ThreadSafe/%.cyclo: ../ThreadSafe/%.c ThreadSafe/subdir.mk
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32L496xx -DSTM32_THREAD_SAFE_STRATEGY=4 -c -I../Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../ThreadSafe -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
+
+clean: clean-ThreadSafe
+
+clean-ThreadSafe:
+	-$(RM) ./ThreadSafe/newlib_lock_glue.cyclo ./ThreadSafe/newlib_lock_glue.d ./ThreadSafe/newlib_lock_glue.o ./ThreadSafe/newlib_lock_glue.su
+
+.PHONY: clean-ThreadSafe
+

@@ -1,0 +1,12 @@
+# Cartelle work
+**/work/
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistemi operativi
+.DS_Store
+Thumbs.db

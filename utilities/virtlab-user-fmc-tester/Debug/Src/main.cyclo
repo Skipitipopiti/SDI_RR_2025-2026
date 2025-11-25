@@ -1,0 +1,17 @@
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_gpio.h:985:22:LL_GPIO_ResetOutputPin	1
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_bus.h:563:22:LL_AHB2_GRP1_EnableClock	1
+../Src/main.c:115:5:main	1
+../Src/main.c:209:6:SystemClock_Config	4
+../Src/main.c:260:6:PeriphCommonClock_Config	2
+../Src/main.c:286:13:MX_ADC1_Init	4
+../Src/main.c:353:13:MX_ADC3_Init	3
+../Src/main.c:411:13:MX_COMP1_Init	2
+../Src/main.c:445:13:MX_DAC1_Init	4
+../Src/main.c:495:13:MX_LCD_Init	2
+../Src/main.c:533:13:MX_OPAMP1_Init	2
+../Src/main.c:566:13:MX_OPAMP2_Init	2
+../Src/main.c:595:13:MX_FMC_Init	2
+../Src/main.c:653:13:MX_GPIO_Init	1
+../Src/main.c:737:13:StartDefaultTask	1
+../Src/main.c:758:6:HAL_TIM_PeriodElapsedCallback	2
+../Src/main.c:775:6:Error_Handler	1

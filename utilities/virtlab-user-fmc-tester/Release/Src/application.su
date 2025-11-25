@@ -1,0 +1,2 @@
+../Src/application.c:25:6:usage	8	static
+../Src/application.c:35:6:StartDefaultTask	24	static
