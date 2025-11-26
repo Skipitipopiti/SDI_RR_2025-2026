@@ -23,4 +23,4 @@ add wave -noupdate tb_FMC/DUT/DP_inst/*
 add wave -noupdate -divider "Control Unit"
 add wave -noupdate tb_FMC/DUT/CU_inst/*
 
-run 4 us
+run 5 us

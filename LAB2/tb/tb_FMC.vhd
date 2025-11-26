@@ -52,10 +52,9 @@ begin
         wait for Tck / 2;
     end process;
 
-    -- Stimulus process
     stimulus_process: process
     begin
-        -- Initialize inputs
+        -- INIZIALIZZAZIONE
         RST_n <= '0';
         NE1 <= '1';
         NWE <= '1';
@@ -64,49 +63,126 @@ begin
 
         RST_n <= '1' after tco;
 
-        wait for Tck;
+        -- SCRITTURA A UN CICLO
+        wait for Tck; -- fronte di discesa
 
         NE1 <= '0' after tco;
         NWE <= '0' after 2*tco;
-        AD <= "1010101010101010" after 3*tco;
+        AD <= X"AAAA" after 3*tco; -- indirizzo
 
         wait for 2*Tck;
         AD <= (others => 'Z');
         wait for Tck;
-        AD <= "1111000011110000" after tco;
-        wait for Tck;
-        AD <= "1111000011110000" after tco;
-        wait for 0.5*Tck;
+        AD <= x"F00D" after tco; -- dato
+        wait for Tck/2;
         NE1 <= '1' after 3*tco;
         NWE <= '1' after 2*tco;
 
-        wait for 5*Tck;
+        wait for 2*Tck;
         AD <= (others => 'Z');
+        wait for Tck/2;
 
-        --LETTURA
-        wait for 4.5*Tck;
-
-        -- Add test vectors here
+        -- SCRITTURA A DUE CICLI COSTANTE
         wait for Tck; -- fronte di discesa
 
         NE1 <= '0' after tco;
-        AD <= "1010101010101010" after 3*tco;
+        NWE <= '0' after 2*tco;
+        AD <= x"AAAB" after 3*tco; -- indirizzo
+
+        wait for 2*Tck;
+        AD <= (others => 'Z');
+        wait for Tck;
+        AD <= x"BABE" after tco; -- dato
+        wait for Tck;
+        AD <= x"BABE" after tco; -- dato (costante)
+        wait for Tck/2;
+        NE1 <= '1' after 3*tco;
+        NWE <= '1' after 2*tco;
+
+        wait for 2*Tck;
+        AD <= (others => 'Z');
+        wait for Tck/2;
+
+        -- SCRITTURA A DUE CICLI VARIABILE
+        wait for Tck; -- fronte di discesa
+
+        NE1 <= '0' after tco;
+        NWE <= '0' after 2*tco;
+        AD <= X"AAAC" after 3*tco; -- indirizzo
+
+        wait for 2*Tck;
+        AD <= (others => 'Z');
+        wait for Tck;
+        AD <= x"BABE" after tco; -- dato 1 (sarà sovrascritto)
+        wait for Tck;
+        AD <= x"CAFE" after tco; -- dato finale
+        wait for Tck/2;
+        NE1 <= '1' after 3*tco;
+        NWE <= '1' after 2*tco;
+
+        wait for 2*Tck;
+        AD <= (others => 'Z');
+        wait for Tck/2;
+
+        --
+
+        wait for 4*Tck;
+
+        -- LETTURA 1
+        wait for Tck; -- fronte di discesa
+
+        NE1 <= '0' after tco;
+        AD <= x"AAAA" after 3*tco;
 
         wait for 2*Tck;
 
         AD <= (others => 'Z');
         NOE <= '0' after 3*tco;
 
-        wait for 2.5 * Tck;
+        wait for 2.5*Tck;
 
         NE1 <= '1' after 2*tco;
         NOE <= '1' after 1*tco;
 
+        wait for 1.5*Tck;
+
+        -- LETTURA 2
+        wait for Tck; -- fronte di discesa
+
+        NE1 <= '0' after tco;
+        AD <= x"AAAB" after 3*tco;
+
+        wait for 2*Tck;
+
+        AD <= (others => 'Z');
+        NOE <= '0' after 3*tco;
+
+        wait for 4.5*Tck; -- lettura prolungata
+
+        NE1 <= '1' after 2*tco;
+        NOE <= '1' after 1*tco;
+
+        wait for 1.5*Tck;
+
+        -- LETTURA 3
+        wait for Tck; -- fronte di discesa
+
+        NE1 <= '0' after tco;
+        AD <= x"AAAC" after 3*tco;
+
+        wait for 2*Tck;
+
+        AD <= (others => 'Z');
+        NOE <= '0' after 3*tco;
+
+        wait for 2.5*Tck;
+
+        NE1 <= '1' after 2*tco;
+        NOE <= '1' after 1*tco;
+
+        -- FINE SIMULAZIONE
         wait for 5.5*Tck;
-
         RST_n <= '0' after tco;
-
-        -- End simulation
         wait;
     end process;
 

@@ -7,6 +7,9 @@
 *.swp
 *.swo
 
+# Modelsim
+*.wlf
+
 # Sistemi operativi
 .DS_Store
 Thumbs.db
