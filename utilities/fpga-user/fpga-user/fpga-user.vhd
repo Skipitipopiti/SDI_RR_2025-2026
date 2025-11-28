@@ -9,84 +9,85 @@ use altera_mf.altera_mf_components.all;
 entity user is
 	port
 	(
+		-- Main clock inputs
+		mainClk	: in std_logic;
+		slowClk	: in std_logic;
 		-- Main reset input
 		reset		: in std_logic;
-		-- FMC interface
-		FMC_CLK : in  std_logic;
-		FMC_NE1, FMC_NOE, FMC_NWE : in  std_logic;
-		FMC_AD : inout std_logic_vector(15 downto 0);
+		-- MCU interface (UART, I2C)
+		mcuUartTx	: in std_logic;
+		mcuUartRx	: out std_logic;
+		mcuI2cScl	: in std_logic;
+		mcuI2cSda	: inout std_logic;
+		-- Logic state analyzer/stimulator
+		lsasBus	: inout std_logic_vector( 31 downto 0 );
+		-- Dip switches
+		switches	: in std_logic_vector( 7 downto 0 );
+		-- LEDs
+		leds		: out std_logic_vector( 3 downto 0 )
 	);
 end user;
 
 architecture behavioural of user is
-	component FMC_CU
-		port (
-			RST     : in  std_logic; -- async reset
-			CLK     : in  std_logic;
-			NE1     : in  std_logic;
-			NOE     : in  std_logic;
-			NWE     : in  std_logic;
 
-			CS      : out std_logic;
-			RD      : out std_logic;
-			WR      : out std_logic;
-			
-			Dout_En : out std_logic;
-			A_En    : out std_logic;
-			Din_En  : out std_logic;
-			Din_OE  : out std_logic  -- tri-state
-		);
-	end component;
+	signal clk: std_logic;
+	signal pllLock: std_logic;
 
-	component FMC_DP
-		port (
-			CLK     : in  std_logic;
-			AD      : inout std_logic_vector(15 downto 0);
+	signal lsasBusIn: std_logic_vector( 31 downto 0 );
+	signal lsasBusOut: std_logic_vector( 31 downto 0 );
+	signal lsasBusEn: std_logic_vector( 31 downto 0 ) := ( others => '0' );
 
-			Dout_En : in std_logic;
-			A_En    : in std_logic;
-			Din_En  : in std_logic;
-			Din_OE  : in std_logic; -- tri-state
-			
-			CS,RD,WR : in std_logic
+	signal mcuI2cDIn: std_logic;
+	signal mcuI2CDOut: std_logic;
+	signal mcuI2cEn: std_logic := '0';	
+
+	component myAltPll
+		PORT
+		(
+			areset		: IN STD_LOGIC  := '0';
+			inclk0		: IN STD_LOGIC  := '0';
+			c0		: OUT STD_LOGIC ;
+			locked		: OUT STD_LOGIC 
 		);
 	end component;
 	
-	signal CS, RD, WR : std_logic;
-	signal Dout_En, A_En, Din_En, Din_OE : std_logic;
-
 begin
-	FMC_CU_inst : FMC_CU
-	port map
-	(
-		RST => reset,
-		CLK => clk,
-		NE1 => FMC_NE1,
-		NOE => FMC_NOE,
-		NWE => FMC_NWE,
 
-		CS => CS,
-		RD => RD,
-		WR => WR,
+--**********************************************************************************
+--* Main clock PLL
+--**********************************************************************************
 
-		Dout_En => Dout_En,
-		A_En => A_En,
-		Din_En => Din_En,
-		Din_OE => Din_OE
+	myAltPll_inst : myAltPll PORT MAP (
+		areset	 => reset,
+		inclk0	 => mainClk,
+		c0	 => clk,
+		locked	 => pllLock
 	);
 
-	FMC_DP_inst : FMC_DP
-	port map
-	(
-		CLK => FMC_CLK,
-		AD => FMC_AD,
-		Dout_En => Dout_En,
-		A_En => A_En,
-		Din_En => Din_En,
-		Din_OE => Din_OE,
-		CS => CS,
-		RD => RD,
-		WR => WR
-	)
+--**********************************************************************************
+--* LEDs
+--**********************************************************************************
+
+	leds <= switches( 3 downto 0 );
+	
+--**********************************************************************************
+--* 		lsasBus	: inout std_logic_vector( 31 downto 0 )
+--**********************************************************************************
+
+	lsasBusIn <= lsasBus;
+
+	lsasBus_tristate:
+	process( lsasBusEn, lsasBusOut ) is
+	begin
+		for index in 0 to 31 loop
+			if lsasBusEn( index ) = '1'  then
+				lsasBus( index ) <= lsasBusOut ( index );
+			else
+				lsasBus( index ) <= 'Z';
+			end if;
+		end loop;
+	end process;
+	
+	
 	
 end behavioural;
