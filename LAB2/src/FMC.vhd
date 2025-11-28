@@ -10,7 +10,15 @@ entity FMC is
         NE1     : in  std_logic;
         NOE     : in  std_logic;
         NWE     : in  std_logic;
-        AD      : inout  std_logic_vector(15 downto 0)
+        AD      : inout  std_logic_vector(15 downto 0);
+
+        CS      : out std_logic;
+        RD      : out std_logic;
+        WR      : out std_logic;
+
+        Mem_Dout : in std_logic_vector(15 downto 0);
+        Mem_Din  : out std_logic_vector(15 downto 0);
+        Mem_A    : out std_logic_vector(15 downto 0)
     );
 end entity FMC;
 
@@ -25,8 +33,10 @@ architecture Behavioral of FMC is
             A_En    : in std_logic;
             Din_En  : in std_logic;
             Din_OE  : in std_logic; -- tri-state
-            
-            CS,RD,WR : in std_logic
+
+            Mem_Dout : in std_logic_vector(15 downto 0);
+            Mem_Din  : out std_logic_vector(15 downto 0);
+            Mem_A    : out std_logic_vector(15 downto 0)
         );
     end component;
 
@@ -48,7 +58,7 @@ architecture Behavioral of FMC is
             Din_OE    : out std_logic  -- tri-state
         );
     end component;
-    signal CS, RD, WR, Din_OE, Dout_En, A_En, Din_En : std_logic;
+    signal Din_OE, Dout_En, A_En, Din_En : std_logic;
 
     begin
     CU_inst : FMC_CU
@@ -78,9 +88,9 @@ architecture Behavioral of FMC is
             A_En    => A_En,
             Din_En  => Din_En,
             Din_OE  => Din_OE,
-            
-            CS      => CS,
-            RD      => RD,
-            WR      => WR
+
+            Mem_Dout => Mem_Dout,
+            Mem_Din  => Mem_Din,
+            Mem_A    => Mem_A
         );
 end Behavioral;
