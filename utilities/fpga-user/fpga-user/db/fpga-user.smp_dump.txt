@@ -1,0 +1,11 @@
+
+State Machine - |user|FMC:FMC_inst|FMC_CU:CU_inst|state
+Name state.D_OUT state.MEM_READ state.WRITE state.SAMPLE_WRITE state.SAMPLE state.WRITE_WAIT state.GET_ADDR state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.GET_ADDR 0 0 0 0 0 0 1 1 
+state.WRITE_WAIT 0 0 0 0 0 1 0 1 
+state.SAMPLE 0 0 0 0 1 0 0 1 
+state.SAMPLE_WRITE 0 0 0 1 0 0 0 1 
+state.WRITE 0 0 1 0 0 0 0 1 
+state.MEM_READ 0 1 0 0 0 0 0 1 
+state.D_OUT 1 0 0 0 0 0 0 1 

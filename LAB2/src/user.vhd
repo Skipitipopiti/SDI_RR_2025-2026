@@ -20,7 +20,7 @@ entity user is
 		mcuI2cScl	: in std_logic;
 		mcuI2cSda	: inout std_logic;
 		-- Logic state analyzer/stimulator
-		lsasBus	: inout std_logic_vector( 31 downto 0 );
+		lsasBus	: inout std_logic_vector( 0 to 31 );
 		-- Dip switches
 		switches	: in std_logic_vector( 7 downto 0 );
 		-- LEDs
@@ -85,16 +85,13 @@ architecture behavioural of user is
 
 	signal sCS, sRD, sWR : std_logic;
 	signal sMem_Dout, sMem_Din : std_logic_vector(15 downto 0);
-	signal sMem_A : std_logic_vector(3 downto 0);
+	signal sMem_A : std_logic_vector(15 downto 0);
 
-
-	
-
-		
-
-	
+	signal sAD : std_logic_vector(15 downto 0);
 	
 begin
+
+	sAD <= lsasBus(30 to 31) & lsasBus(16 to 17) & lsasBus(7 to 15) & lsasBus(24 to 26);
 
 --**********************************************************************************
 --* Main clock PLL
@@ -121,10 +118,10 @@ begin
 			CLK     => clk,
 			RST_n   => reset, 
 
-			NE1     => lsasBus(16),
-			NOE     => lsasBus(17),
-			NWE     => lsasBus(18),
-			AD      => lsasBus(15 downto 0),
+			NE1     => lsasBus(23),
+			NOE     => lsasBus(20),
+			NWE     => lsasBus(21),
+			AD      => sAD,
 
 			CS      => sCS,
 			RD      => sRD,
@@ -135,12 +132,12 @@ begin
 			Mem_A    => sMem_A
 		);
 --**********************************************************************************
---* RF
+--* Register File
 --**********************************************************************************
 	RF_inst : RF
 		generic map (
 			WORD_SIZE => 16,
-			ADDRESS_SIZE => 4
+			ADDRESS_SIZE => 16
 		)
 		port map (
 			Clock => clk,

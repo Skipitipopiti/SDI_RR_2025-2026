@@ -1,6 +1,6 @@
 Assembler report for fpga-user
-Wed Nov 23 22:22:17 2022
-Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Tue Dec  2 11:13:01 2025
+Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
 ---------------------
@@ -10,8 +10,8 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: fpga-user.sof
-  6. Assembler Device Options: fpga-user.rbf
+  5. Assembler Device Options: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.sof
+  6. Assembler Device Options: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.rbf
   7. Assembler Messages
 
 
@@ -19,27 +19,27 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2021  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
 
 
 
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Nov 23 22:22:17 2022 ;
+; Assembler Status      ; Successful - Tue Dec  2 11:13:01 2025 ;
 ; Revision Name         ; fpga-user                             ;
 ; Top-level Entity Name ; user                                  ;
 ; Family                ; Cyclone 10 LP                         ;
@@ -54,34 +54,34 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+-------------------------------------------------------------------+
-; Assembler Generated Files                                         ;
-+-------------------------------------------------------------------+
-; File Name                                                         ;
-+-------------------------------------------------------------------+
-; /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.sof ;
-; /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.rbf ;
-+-------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                          ;
++--------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                          ;
++--------------------------------------------------------------------------------------------------------------------+
+; C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.sof ;
+; C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.rbf ;
++--------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------+
-; Assembler Device Options: fpga-user.sof ;
-+----------------+------------------------+
-; Option         ; Setting                ;
-+----------------+------------------------+
-; JTAG usercode  ; 0x0014092D             ;
-; Checksum       ; 0x0014092D             ;
-+----------------+------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.sof ;
++----------------+-----------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                     ;
++----------------+-----------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x0014092D                                                                                                                  ;
+; Checksum       ; 0x0014092D                                                                                                                  ;
++----------------+-----------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------+
-; Assembler Device Options: fpga-user.rbf ;
-+---------------------+-------------------+
-; Option              ; Setting           ;
-+---------------------+-------------------+
-; Raw Binary File     ;                   ;
-;  Compression Ratio  ; 3                 ;
-+---------------------+-------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.rbf ;
++---------------------+------------------------------------------------------------------------------------------------------------------------+
+; Option              ; Setting                                                                                                                ;
++---------------------+------------------------------------------------------------------------------------------------------------------------+
+; Raw Binary File     ;                                                                                                                        ;
+;  Compression Ratio  ; 3                                                                                                                      ;
++---------------------+------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -89,15 +89,15 @@ https://fpgasoftware.intel.com/eula.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
-    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Wed Nov 23 22:22:16 2022
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Processing started: Tue Dec  2 11:12:59 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off fpga-user -c fpga-user
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 610 megabytes
-    Info: Processing ended: Wed Nov 23 22:22:17 2022
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4768 megabytes
+    Info: Processing ended: Tue Dec  2 11:13:01 2025
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

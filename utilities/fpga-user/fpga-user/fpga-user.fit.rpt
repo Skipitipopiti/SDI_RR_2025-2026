@@ -1,6 +1,6 @@
 Fitter report for fpga-user
-Wed Nov 23 22:22:15 2022
-Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Tue Dec  2 11:12:49 2025
+Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
 ---------------------
@@ -40,43 +40,43 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2021  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
 
 
 
-+----------------------------------------------------------------------------------+
-; Fitter Summary                                                                   ;
-+------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Nov 23 22:22:15 2022       ;
-; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
-; Revision Name                      ; fpga-user                                   ;
-; Top-level Entity Name              ; user                                        ;
-; Family                             ; Cyclone 10 LP                               ;
-; Device                             ; 10CL025YE144C8G                             ;
-; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 0 / 24,624 ( 0 % )                          ;
-;     Total combinational functions  ; 0 / 24,624 ( 0 % )                          ;
-;     Dedicated logic registers      ; 0 / 24,624 ( 0 % )                          ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 51 / 77 ( 66 % )                            ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
-; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
-+------------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Fitter Summary                                                                       ;
++------------------------------------+-------------------------------------------------+
+; Fitter Status                      ; Successful - Tue Dec  2 11:12:49 2025           ;
+; Quartus Prime Version              ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
+; Revision Name                      ; fpga-user                                       ;
+; Top-level Entity Name              ; user                                            ;
+; Family                             ; Cyclone 10 LP                                   ;
+; Device                             ; 10CL025YE144C8G                                 ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 0 / 24,624 ( 0 % )                              ;
+;     Total combinational functions  ; 0 / 24,624 ( 0 % )                              ;
+;     Dedicated logic registers      ; 0 / 24,624 ( 0 % )                              ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 51 / 77 ( 66 % )                                ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0 / 608,256 ( 0 % )                             ;
+; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                                 ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                                   ;
++------------------------------------+-------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -146,15 +146,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 14          ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Average used               ; 1.04        ;
+; Maximum used               ; 14          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.1%      ;
+;     Processors 2-14        ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -196,7 +196,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.pin.
+The pin-out file can be found in C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.pin.
 
 
 +-------------------------------------------------------------------+
@@ -608,38 +608,38 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; leds[2]     ; Missing drive strength ;
 ; leds[3]     ; Missing drive strength ;
 ; mcuI2cSda   ; Missing drive strength ;
-; lsasBus[0]  ; Missing drive strength ;
-; lsasBus[1]  ; Missing drive strength ;
-; lsasBus[2]  ; Missing drive strength ;
-; lsasBus[3]  ; Missing drive strength ;
-; lsasBus[4]  ; Missing drive strength ;
-; lsasBus[5]  ; Missing drive strength ;
-; lsasBus[6]  ; Missing drive strength ;
-; lsasBus[7]  ; Missing drive strength ;
-; lsasBus[8]  ; Missing drive strength ;
-; lsasBus[9]  ; Missing drive strength ;
-; lsasBus[10] ; Missing drive strength ;
-; lsasBus[11] ; Missing drive strength ;
-; lsasBus[12] ; Missing drive strength ;
-; lsasBus[13] ; Missing drive strength ;
-; lsasBus[14] ; Missing drive strength ;
-; lsasBus[15] ; Missing drive strength ;
-; lsasBus[16] ; Missing drive strength ;
-; lsasBus[17] ; Missing drive strength ;
-; lsasBus[18] ; Missing drive strength ;
-; lsasBus[19] ; Missing drive strength ;
-; lsasBus[20] ; Missing drive strength ;
-; lsasBus[21] ; Missing drive strength ;
-; lsasBus[22] ; Missing drive strength ;
-; lsasBus[23] ; Missing drive strength ;
-; lsasBus[24] ; Missing drive strength ;
-; lsasBus[25] ; Missing drive strength ;
-; lsasBus[26] ; Missing drive strength ;
-; lsasBus[27] ; Missing drive strength ;
-; lsasBus[28] ; Missing drive strength ;
 ; lsasBus[29] ; Missing drive strength ;
-; lsasBus[30] ; Missing drive strength ;
+; lsasBus[28] ; Missing drive strength ;
+; lsasBus[27] ; Missing drive strength ;
+; lsasBus[22] ; Missing drive strength ;
+; lsasBus[19] ; Missing drive strength ;
+; lsasBus[18] ; Missing drive strength ;
+; lsasBus[6]  ; Missing drive strength ;
+; lsasBus[5]  ; Missing drive strength ;
+; lsasBus[4]  ; Missing drive strength ;
+; lsasBus[3]  ; Missing drive strength ;
+; lsasBus[2]  ; Missing drive strength ;
+; lsasBus[1]  ; Missing drive strength ;
+; lsasBus[0]  ; Missing drive strength ;
 ; lsasBus[31] ; Missing drive strength ;
+; lsasBus[30] ; Missing drive strength ;
+; lsasBus[26] ; Missing drive strength ;
+; lsasBus[25] ; Missing drive strength ;
+; lsasBus[24] ; Missing drive strength ;
+; lsasBus[23] ; Missing drive strength ;
+; lsasBus[21] ; Missing drive strength ;
+; lsasBus[20] ; Missing drive strength ;
+; lsasBus[17] ; Missing drive strength ;
+; lsasBus[16] ; Missing drive strength ;
+; lsasBus[15] ; Missing drive strength ;
+; lsasBus[14] ; Missing drive strength ;
+; lsasBus[13] ; Missing drive strength ;
+; lsasBus[12] ; Missing drive strength ;
+; lsasBus[11] ; Missing drive strength ;
+; lsasBus[10] ; Missing drive strength ;
+; lsasBus[9]  ; Missing drive strength ;
+; lsasBus[8]  ; Missing drive strength ;
+; lsasBus[7]  ; Missing drive strength ;
 +-------------+------------------------+
 
 
@@ -658,9 +658,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------+----------+---------------+---------------+-----------------------+-----+------+
 ; Name        ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
 +-------------+----------+---------------+---------------+-----------------------+-----+------+
-; mainClk     ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; slowClk     ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; reset       ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; mcuUartTx   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; mcuUartRx   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; mcuI2cScl   ; Input    ; --            ; --            ; --                    ; --  ; --   ;
@@ -672,39 +670,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; leds[1]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; leds[2]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; leds[3]     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; reset       ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; mainClk     ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; mcuI2cSda   ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[0]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[1]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[2]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[3]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[4]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[5]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[6]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[7]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[8]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[9]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[10] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[11] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[12] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[13] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[14] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[15] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[16] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[17] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[18] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[19] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[20] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[21] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[22] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[23] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[24] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[25] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[26] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[27] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[28] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; lsasBus[29] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; lsasBus[30] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[28] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[27] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[22] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[19] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[18] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[6]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[5]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[4]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[3]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[2]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[1]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[0]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; lsasBus[31] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[30] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[26] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[25] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[24] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[23] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[21] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[20] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[17] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[16] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[15] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[14] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[13] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[12] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[11] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[10] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[9]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[8]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
+; lsasBus[7]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
 ; switches[0] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; switches[1] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; switches[2] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
@@ -717,48 +717,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------+---------+
 ; Source Pin / Fanout   ; Pad To Core Index ; Setting ;
 +-----------------------+-------------------+---------+
-; mainClk               ;                   ;         ;
 ; slowClk               ;                   ;         ;
-; reset                 ;                   ;         ;
 ; mcuUartTx             ;                   ;         ;
 ; mcuI2cScl             ;                   ;         ;
 ; switches[4]           ;                   ;         ;
 ; switches[5]           ;                   ;         ;
 ; switches[6]           ;                   ;         ;
 ; switches[7]           ;                   ;         ;
+; reset                 ;                   ;         ;
+; mainClk               ;                   ;         ;
 ; mcuI2cSda             ;                   ;         ;
-; lsasBus[0]            ;                   ;         ;
-; lsasBus[1]            ;                   ;         ;
-; lsasBus[2]            ;                   ;         ;
-; lsasBus[3]            ;                   ;         ;
-; lsasBus[4]            ;                   ;         ;
-; lsasBus[5]            ;                   ;         ;
-; lsasBus[6]            ;                   ;         ;
-; lsasBus[7]            ;                   ;         ;
-; lsasBus[8]            ;                   ;         ;
-; lsasBus[9]            ;                   ;         ;
-; lsasBus[10]           ;                   ;         ;
-; lsasBus[11]           ;                   ;         ;
-; lsasBus[12]           ;                   ;         ;
-; lsasBus[13]           ;                   ;         ;
-; lsasBus[14]           ;                   ;         ;
-; lsasBus[15]           ;                   ;         ;
-; lsasBus[16]           ;                   ;         ;
-; lsasBus[17]           ;                   ;         ;
-; lsasBus[18]           ;                   ;         ;
-; lsasBus[19]           ;                   ;         ;
-; lsasBus[20]           ;                   ;         ;
-; lsasBus[21]           ;                   ;         ;
-; lsasBus[22]           ;                   ;         ;
-; lsasBus[23]           ;                   ;         ;
-; lsasBus[24]           ;                   ;         ;
-; lsasBus[25]           ;                   ;         ;
-; lsasBus[26]           ;                   ;         ;
-; lsasBus[27]           ;                   ;         ;
-; lsasBus[28]           ;                   ;         ;
 ; lsasBus[29]           ;                   ;         ;
-; lsasBus[30]           ;                   ;         ;
+; lsasBus[28]           ;                   ;         ;
+; lsasBus[27]           ;                   ;         ;
+; lsasBus[22]           ;                   ;         ;
+; lsasBus[19]           ;                   ;         ;
+; lsasBus[18]           ;                   ;         ;
+; lsasBus[6]            ;                   ;         ;
+; lsasBus[5]            ;                   ;         ;
+; lsasBus[4]            ;                   ;         ;
+; lsasBus[3]            ;                   ;         ;
+; lsasBus[2]            ;                   ;         ;
+; lsasBus[1]            ;                   ;         ;
+; lsasBus[0]            ;                   ;         ;
 ; lsasBus[31]           ;                   ;         ;
+; lsasBus[30]           ;                   ;         ;
+; lsasBus[26]           ;                   ;         ;
+; lsasBus[25]           ;                   ;         ;
+; lsasBus[24]           ;                   ;         ;
+; lsasBus[23]           ;                   ;         ;
+; lsasBus[21]           ;                   ;         ;
+; lsasBus[20]           ;                   ;         ;
+; lsasBus[17]           ;                   ;         ;
+; lsasBus[16]           ;                   ;         ;
+; lsasBus[15]           ;                   ;         ;
+; lsasBus[14]           ;                   ;         ;
+; lsasBus[13]           ;                   ;         ;
+; lsasBus[12]           ;                   ;         ;
+; lsasBus[11]           ;                   ;         ;
+; lsasBus[10]           ;                   ;         ;
+; lsasBus[9]            ;                   ;         ;
+; lsasBus[8]            ;                   ;         ;
+; lsasBus[7]            ;                   ;         ;
 ; switches[0]           ;                   ;         ;
 ;      - leds[0]~output ; 0                 ; 6       ;
 ; switches[1]           ;                   ;         ;
@@ -804,8 +804,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+--------+------+-------------------+
 ; Status       ; ID        ; Category                          ; Rule Description                                                                                     ; Severity ; Information                                                              ; Device ; Area ; Extra Information ;
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+--------+------+-------------------+
-; Inapplicable ; IO_000002 ; Capacity Checks                   ; Number of clocks in an I/O bank should not exceed the number of clocks available.                    ; Critical ; No Global Signal assignments found.                                      ; ALL    ; I/O  ;                   ;
 ; Pass         ; IO_000001 ; Capacity Checks                   ; Number of pins in an I/O bank should not exceed the number of locations available.                   ; Critical ; 0 such failures found.                                                   ; ALL    ; I/O  ;                   ;
+; Inapplicable ; IO_000002 ; Capacity Checks                   ; Number of clocks in an I/O bank should not exceed the number of clocks available.                    ; Critical ; No Global Signal assignments found.                                      ; ALL    ; I/O  ;                   ;
 ; Pass         ; IO_000003 ; Capacity Checks                   ; Number of pins in a Vrefgroup should not exceed the number of locations available.                   ; Critical ; 0 such failures found.                                                   ; ALL    ; I/O  ;                   ;
 ; Inapplicable ; IO_000004 ; Voltage Compatibility Checks      ; The I/O bank should support the requested VCCIO.                                                     ; Critical ; No IOBANK_VCCIO assignments found.                                       ; ALL    ; I/O  ;                   ;
 ; Inapplicable ; IO_000005 ; Voltage Compatibility Checks      ; The I/O bank should not have competing VREF values.                                                  ; Critical ; No VREF I/O Standard assignments found.                                  ; ALL    ; I/O  ;                   ;
@@ -813,24 +813,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Pass         ; IO_000007 ; Valid Location Checks             ; Checks for unavailable locations.                                                                    ; Critical ; 0 such failures found.                                                   ; ALL    ; I/O  ;                   ;
 ; Inapplicable ; IO_000008 ; Valid Location Checks             ; Checks for reserved locations.                                                                       ; Critical ; No reserved LogicLock region found.                                      ; ALL    ; I/O  ;                   ;
 ; Pass         ; IO_000009 ; I/O Properties Checks for One I/O ; The location should support the requested I/O standard.                                              ; Critical ; 0 such failures found.                                                   ; ALL    ; I/O  ;                   ;
-; Inapplicable ; IO_000045 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Slew Rate value.                                       ; Critical ; No Slew Rate assignments found.                                          ; ALL    ; I/O  ;                   ;
 ; Pass         ; IO_000010 ; I/O Properties Checks for One I/O ; The location should support the requested I/O direction.                                             ; Critical ; 0 such failures found.                                                   ; ALL    ; I/O  ;                   ;
+; Inapplicable ; IO_000011 ; I/O Properties Checks for One I/O ; The location should support the requested Current Strength.                                          ; Critical ; No Current Strength assignments found.                                   ; ALL    ; I/O  ;                   ;
 ; Inapplicable ; IO_000012 ; I/O Properties Checks for One I/O ; The location should support the requested On Chip Termination value.                                 ; Critical ; No Termination assignments found.                                        ; ALL    ; I/O  ;                   ;
 ; Inapplicable ; IO_000013 ; I/O Properties Checks for One I/O ; The location should support the requested Bus Hold value.                                            ; Critical ; No Enable Bus-Hold Circuitry assignments found.                          ; ALL    ; I/O  ;                   ;
 ; Inapplicable ; IO_000014 ; I/O Properties Checks for One I/O ; The location should support the requested Weak Pull Up value.                                        ; Critical ; No Weak Pull-Up Resistor assignments found.                              ; ALL    ; I/O  ;                   ;
 ; Pass         ; IO_000015 ; I/O Properties Checks for One I/O ; The location should support the requested PCI Clamp Diode.                                           ; Critical ; 0 such failures found.                                                   ; ALL    ; I/O  ;                   ;
 ; Inapplicable ; IO_000018 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Current Strength.                                      ; Critical ; No Current Strength assignments found.                                   ; ALL    ; I/O  ;                   ;
-; Inapplicable ; IO_000022 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Bus Hold value.                                        ; Critical ; No Enable Bus-Hold Circuitry assignments found.                          ; ALL    ; I/O  ;                   ;
 ; Inapplicable ; IO_000019 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested On Chip Termination value.                             ; Critical ; No Termination assignments found.                                        ; ALL    ; I/O  ;                   ;
-; Inapplicable ; IO_000047 ; I/O Properties Checks for One I/O ; On Chip Termination and Slew Rate should not be used at the same time.                               ; Critical ; No Slew Rate assignments found.                                          ; ALL    ; I/O  ;                   ;
-; Inapplicable ; IO_000046 ; I/O Properties Checks for One I/O ; The location should support the requested Slew Rate value.                                           ; Critical ; No Slew Rate assignments found.                                          ; ALL    ; I/O  ;                   ;
-; Inapplicable ; IO_000027 ; I/O Properties Checks for One I/O ; Weak Pull Up and Bus Hold should not be used at the same time.                                       ; Critical ; No Enable Bus-Hold Circuitry or Weak Pull-Up Resistor assignments found. ; ALL    ; I/O  ;                   ;
-; Inapplicable ; IO_000026 ; I/O Properties Checks for One I/O ; On Chip Termination and Current Strength should not be used at the same time.                        ; Critical ; No Current Strength or Termination assignments found.                    ; ALL    ; I/O  ;                   ;
-; Inapplicable ; IO_000024 ; I/O Properties Checks for One I/O ; The I/O direction should support the On Chip Termination value.                                      ; Critical ; No Termination assignments found.                                        ; ALL    ; I/O  ;                   ;
-; Pass         ; IO_000023 ; I/O Properties Checks for One I/O ; The I/O standard should support the Open Drain value.                                                ; Critical ; 0 such failures found.                                                   ; ALL    ; I/O  ;                   ;
-; Inapplicable ; IO_000021 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Weak Pull Up value.                                    ; Critical ; No Weak Pull-Up Resistor assignments found.                              ; ALL    ; I/O  ;                   ;
-; Inapplicable ; IO_000011 ; I/O Properties Checks for One I/O ; The location should support the requested Current Strength.                                          ; Critical ; No Current Strength assignments found.                                   ; ALL    ; I/O  ;                   ;
 ; Pass         ; IO_000020 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested PCI Clamp Diode.                                       ; Critical ; 0 such failures found.                                                   ; ALL    ; I/O  ;                   ;
+; Inapplicable ; IO_000021 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Weak Pull Up value.                                    ; Critical ; No Weak Pull-Up Resistor assignments found.                              ; ALL    ; I/O  ;                   ;
+; Inapplicable ; IO_000022 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Bus Hold value.                                        ; Critical ; No Enable Bus-Hold Circuitry assignments found.                          ; ALL    ; I/O  ;                   ;
+; Pass         ; IO_000023 ; I/O Properties Checks for One I/O ; The I/O standard should support the Open Drain value.                                                ; Critical ; 0 such failures found.                                                   ; ALL    ; I/O  ;                   ;
+; Inapplicable ; IO_000024 ; I/O Properties Checks for One I/O ; The I/O direction should support the On Chip Termination value.                                      ; Critical ; No Termination assignments found.                                        ; ALL    ; I/O  ;                   ;
+; Inapplicable ; IO_000026 ; I/O Properties Checks for One I/O ; On Chip Termination and Current Strength should not be used at the same time.                        ; Critical ; No Current Strength or Termination assignments found.                    ; ALL    ; I/O  ;                   ;
+; Inapplicable ; IO_000027 ; I/O Properties Checks for One I/O ; Weak Pull Up and Bus Hold should not be used at the same time.                                       ; Critical ; No Enable Bus-Hold Circuitry or Weak Pull-Up Resistor assignments found. ; ALL    ; I/O  ;                   ;
+; Inapplicable ; IO_000045 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Slew Rate value.                                       ; Critical ; No Slew Rate assignments found.                                          ; ALL    ; I/O  ;                   ;
+; Inapplicable ; IO_000046 ; I/O Properties Checks for One I/O ; The location should support the requested Slew Rate value.                                           ; Critical ; No Slew Rate assignments found.                                          ; ALL    ; I/O  ;                   ;
+; Inapplicable ; IO_000047 ; I/O Properties Checks for One I/O ; On Chip Termination and Slew Rate should not be used at the same time.                               ; Critical ; No Slew Rate assignments found.                                          ; ALL    ; I/O  ;                   ;
 ; Pass         ; IO_000033 ; Electromigration Checks           ; Current density for consecutive I/Os should not exceed 240mA for row I/Os and 240mA for column I/Os. ; Critical ; 0 such failures found.                                                   ; ALL    ; I/O  ;                   ;
 ; Inapplicable ; IO_000034 ; SI Related Distance Checks        ; Single-ended outputs should be 5 LAB row(s) away from a differential I/O.                            ; High     ; No Differential I/O Standard assignments found.                          ; ALL    ; I/O  ;                   ;
 ; Inapplicable ; IO_000042 ; SI Related SSO Limit Checks       ; No more than 20 outputs are allowed in a VREF group when VREF is being read from.                    ; High     ; No VREF I/O Standard assignments found.                                  ; ALL    ; I/O  ;                   ;
@@ -839,65 +839,65 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; I/O Rules Matrix                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
-+--------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Pin/Rules          ; IO_000002    ; IO_000001 ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000045    ; IO_000010 ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000022    ; IO_000019    ; IO_000047    ; IO_000046    ; IO_000027    ; IO_000026    ; IO_000024    ; IO_000023    ; IO_000021    ; IO_000011    ; IO_000020    ; IO_000033 ; IO_000034    ; IO_000042    ;
-+--------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 0            ; 51        ; 51        ; 0            ; 0            ; 51        ; 51        ; 0            ; 51        ; 0            ; 51        ; 0            ; 0            ; 0            ; 46           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 33           ; 0            ; 0            ; 46           ; 51        ; 0            ; 0            ;
-; Total Unchecked    ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 51           ; 0         ; 0         ; 51           ; 51           ; 0         ; 0         ; 51           ; 0         ; 51           ; 0         ; 51           ; 51           ; 51           ; 5            ; 51           ; 51           ; 51           ; 51           ; 51           ; 51           ; 51           ; 51           ; 18           ; 51           ; 51           ; 5            ; 0         ; 51           ; 51           ;
-; Total Fail         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; mainClk            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; slowClk            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; reset              ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; mcuUartTx          ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; mcuUartRx          ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; mcuI2cScl          ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; switches[4]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; switches[5]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; switches[6]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; switches[7]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; leds[0]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; leds[1]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; leds[2]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; leds[3]            ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; mcuI2cSda          ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[0]         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[1]         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[2]         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[3]         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[4]         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[5]         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[6]         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[7]         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[8]         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[9]         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[10]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[11]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[12]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[13]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[14]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[15]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[16]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[17]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[18]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[19]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[20]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[21]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[22]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[23]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[24]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[25]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[26]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[27]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[28]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[29]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[30]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; lsasBus[31]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; switches[0]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; switches[1]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; switches[2]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-; switches[3]        ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Pass      ; Inapplicable ; Inapplicable ;
-+--------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
++--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
+; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
++--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
+; Total Pass         ; 51        ; 0            ; 51        ; 0            ; 0            ; 51        ; 51        ; 0            ; 51        ; 51        ; 0            ; 0            ; 0            ; 0            ; 46           ; 0            ; 0            ; 46           ; 0            ; 0            ; 33           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 51        ; 0            ; 0            ;
+; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
+; Total Inapplicable ; 0         ; 51           ; 0         ; 51           ; 51           ; 0         ; 0         ; 51           ; 0         ; 0         ; 51           ; 51           ; 51           ; 51           ; 5            ; 51           ; 51           ; 5            ; 51           ; 51           ; 18           ; 51           ; 51           ; 51           ; 51           ; 51           ; 51           ; 0         ; 51           ; 51           ;
+; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
+; slowClk            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; mcuUartTx          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; mcuUartRx          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; mcuI2cScl          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; switches[4]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; switches[5]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; switches[6]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; switches[7]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; leds[0]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; leds[1]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; leds[2]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; leds[3]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; reset              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; mainClk            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; mcuI2cSda          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[29]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[28]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[27]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[22]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[19]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[18]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[6]         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[5]         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[4]         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[3]         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[2]         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[1]         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[0]         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[31]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[30]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[26]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[25]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[24]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[23]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[21]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[20]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[17]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[16]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[15]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[14]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[13]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[12]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[11]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[10]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[9]         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[8]         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; lsasBus[7]         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; switches[0]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; switches[1]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; switches[2]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; switches[3]        ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
++--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
 +----------------------------------------------------------------------------------------+
@@ -939,7 +939,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
 Info (119006): Selected device 10CL025YE144C8G for design "fpga-user"
 Info (119018): Selected Migration Device List
     Info (119019): Selected 10CL006YE144C8G for migration
@@ -973,17 +973,70 @@ Info (12825): nCSO dual-purpose pin not reserved
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info (169213): Configuration voltage level of 3.3V is enforced on the I/O bank 1. The VCCIO of the I/O bank 1 is set to 3.3V.
 Info (169213): Configuration voltage level of 3.3V is enforced on the I/O bank 1. The VCCIO of the I/O bank 1 is set to 3.3V.
-Critical Warning (332012): Synopsys Design Constraints File file not found: 'fpga-user.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
-Info (332144): No user constrained base clocks found in the design
-Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
-Warning (332068): No clocks defined in design.
-Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
-Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
-Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
+Info (332104): Reading SDC File: 'fpga-user.out.sdc'
+Warning (332174): Ignored filter at fpga-user.out.sdc(45): myAltPll_inst|altpll_component|auto_generated|pll1|inclk[0] could not be matched with a pin File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 45
+Warning (332174): Ignored filter at fpga-user.out.sdc(45): myAltPll_inst|altpll_component|auto_generated|pll1|clk[0] could not be matched with a pin File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 45
+Critical Warning (332049): Ignored create_generated_clock at fpga-user.out.sdc(45): Argument <targets> is an empty collection File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 45
+    Info (332050): create_generated_clock -name {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]} -source [get_pins {myAltPll_inst|altpll_component|auto_generated|pll1|inclk[0]}] -duty_cycle 50/1 -multiply_by 1 -master_clock {mainClk} [get_pins {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}]  File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 45
+Warning (332049): Ignored create_generated_clock at fpga-user.out.sdc(45): Argument -source is an empty collection File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 45
+Warning (332174): Ignored filter at fpga-user.out.sdc(57): myAltPll_inst|altpll_component|auto_generated|pll1|clk[0] could not be matched with a clock File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 57
+Warning (332049): Ignored set_clock_uncertainty at fpga-user.out.sdc(57): Argument -rise_from with value [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}] contains zero elements File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 57
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}] -rise_to [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}]  0.020   File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 57
+Warning (332049): Ignored set_clock_uncertainty at fpga-user.out.sdc(57): Argument -rise_to with value [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}] contains zero elements File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 57
+Warning (332049): Ignored set_clock_uncertainty at fpga-user.out.sdc(58): Argument -rise_from with value [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}] contains zero elements File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 58
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}] -fall_to [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}]  0.020   File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 58
+Warning (332049): Ignored set_clock_uncertainty at fpga-user.out.sdc(58): Argument -fall_to with value [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}] contains zero elements File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 58
+Warning (332049): Ignored set_clock_uncertainty at fpga-user.out.sdc(59): Argument -fall_from with value [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}] contains zero elements File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 59
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}] -rise_to [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}]  0.020   File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 59
+Warning (332049): Ignored set_clock_uncertainty at fpga-user.out.sdc(59): Argument -rise_to with value [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}] contains zero elements File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 59
+Warning (332049): Ignored set_clock_uncertainty at fpga-user.out.sdc(60): Argument -fall_from with value [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}] contains zero elements File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 60
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}] -fall_to [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}]  0.020   File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 60
+Warning (332049): Ignored set_clock_uncertainty at fpga-user.out.sdc(60): Argument -fall_to with value [get_clocks {myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]}] contains zero elements File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 60
+Warning (332174): Ignored filter at fpga-user.out.sdc(68): mcuSpiCk could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 68
+Warning (332049): Ignored set_input_delay at fpga-user.out.sdc(68): Argument <targets> is an empty collection File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 68
+    Info (332050): set_input_delay -add_delay  -clock [get_clocks {mainClk}]  5.000 [get_ports {mcuSpiCk}] File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 68
+Warning (332174): Ignored filter at fpga-user.out.sdc(69): mcuSpiCs could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 69
+Warning (332049): Ignored set_input_delay at fpga-user.out.sdc(69): Argument <targets> is an empty collection File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 69
+    Info (332050): set_input_delay -add_delay  -clock [get_clocks {mainClk}]  5.000 [get_ports {mcuSpiCs}] File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 69
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): hBusCk could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): hBusCs could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): hBusD[0] could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): hBusD[1] could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): hBusD[2] could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): hBusD[3] could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): hBusD[4] could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): hBusD[5] could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): hBusD[6] could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): hBusD[7] could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): hBusRst could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): hBusRwds could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): mcuSpiIo[0] could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): mcuSpiIo[1] could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): mcuSpiIo[2] could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(77): mcuSpiIo[3] could not be matched with a port File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 77
+Warning (332174): Ignored filter at fpga-user.out.sdc(75): myAltPll_inst|altpll_component|auto_generated|pll1|clk[0] could not be matched with a clock File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 75
+Warning (332049): Ignored set_output_delay at fpga-user.out.sdc(75): Argument -clock is not an object ID File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 75
+    Info (332050): set_output_delay -clock {
+    myAltPll_inst|altpll_component|auto_generated|pll1|clk[0]
+} 5 [get_ports {
+    hBusCk hBusCs
+    hBusD[0] hBusD[1] hBusD[2] hBusD[3] hBusD[4] hBusD[5] hBusD[6] hBusD[7]
+    hBusRst hBusRwds
+    lsasBus[0] lsasBus[1] lsasBus[2] lsasBus[3] lsasBus[4] lsasBus[5] lsasBus[6] lsasBus[7]
+    lsasBus[8] lsasBus[9] lsasBus[10] lsasBus[11] lsasBus[12] lsasBus[13] lsasBus[14] lsasBus[15]
+    lsasBus[16] lsasBus[17] lsasBus[18] lsasBus[19] lsasBus[20] lsasBus[21] lsasBus[22] lsasBus[23]
+    lsasBus[24] lsasBus[25] lsasBus[26] lsasBus[27] lsasBus[28] lsasBus[29] lsasBus[30] lsasBus[31]
+    mcuSpiIo[0] mcuSpiIo[1] mcuSpiIo[2] mcuSpiIo[3]
+}] File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.out.sdc Line: 75
+Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info (332111): Found 1 clocks
+    Info (332111):   Period   Clock Name
+    Info (332111): ======== ============
+    Info (332111):  100.000      mainClk
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -997,106 +1050,106 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.01 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Info (169213): Configuration voltage level of 3.3V is enforced on the I/O bank 1. The VCCIO of the I/O bank 1 is set to 3.3V.
 Info (169213): Configuration voltage level of 3.3V is enforced on the I/O bank 1. The VCCIO of the I/O bank 1 is set to 3.3V.
 Warning (169177): 46 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone 10 LP Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin mainClk uses I/O standard 3.3-V LVCMOS at 22 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 13
-    Info (169178): Pin slowClk uses I/O standard 3.3-V LVCMOS at 23 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 14
-    Info (169178): Pin reset uses I/O standard 3.3-V LVCMOS at 24 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 16
-    Info (169178): Pin mcuUartTx uses I/O standard 3.3-V LVCMOS at 10 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 18
-    Info (169178): Pin mcuI2cScl uses I/O standard 3.3-V LVCMOS at 6 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 20
-    Info (169178): Pin switches[4] uses I/O standard 3.3-V LVCMOS at 59 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 25
-    Info (169178): Pin switches[5] uses I/O standard 3.3-V LVCMOS at 60 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 25
-    Info (169178): Pin switches[6] uses I/O standard 3.3-V LVCMOS at 65 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 25
-    Info (169178): Pin switches[7] uses I/O standard 3.3-V LVCMOS at 66 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 25
-    Info (169178): Pin mcuI2cSda uses I/O standard 3.3-V LVCMOS at 7 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 21
-    Info (169178): Pin lsasBus[0] uses I/O standard 3.3-V LVCMOS at 76 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[1] uses I/O standard 3.3-V LVCMOS at 77 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[2] uses I/O standard 3.3-V LVCMOS at 80 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[3] uses I/O standard 3.3-V LVCMOS at 83 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[4] uses I/O standard 3.3-V LVCMOS at 85 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[5] uses I/O standard 3.3-V LVCMOS at 86 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[6] uses I/O standard 3.3-V LVCMOS at 87 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[7] uses I/O standard 3.3-V LVCMOS at 98 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[8] uses I/O standard 3.3-V LVCMOS at 99 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[9] uses I/O standard 3.3-V LVCMOS at 100 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[10] uses I/O standard 3.3-V LVCMOS at 101 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[11] uses I/O standard 3.3-V LVCMOS at 103 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[12] uses I/O standard 3.3-V LVCMOS at 105 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[13] uses I/O standard 3.3-V LVCMOS at 106 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[14] uses I/O standard 3.3-V LVCMOS at 111 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[15] uses I/O standard 3.3-V LVCMOS at 112 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[16] uses I/O standard 3.3-V LVCMOS at 113 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[17] uses I/O standard 3.3-V LVCMOS at 114 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[18] uses I/O standard 3.3-V LVCMOS at 115 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[19] uses I/O standard 3.3-V LVCMOS at 119 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[20] uses I/O standard 3.3-V LVCMOS at 120 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[21] uses I/O standard 3.3-V LVCMOS at 121 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[22] uses I/O standard 3.3-V LVCMOS at 125 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[23] uses I/O standard 3.3-V LVCMOS at 132 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[24] uses I/O standard 3.3-V LVCMOS at 133 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[25] uses I/O standard 3.3-V LVCMOS at 135 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[26] uses I/O standard 3.3-V LVCMOS at 136 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[27] uses I/O standard 3.3-V LVCMOS at 137 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[28] uses I/O standard 3.3-V LVCMOS at 141 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[29] uses I/O standard 3.3-V LVCMOS at 142 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[30] uses I/O standard 3.3-V LVCMOS at 143 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin lsasBus[31] uses I/O standard 3.3-V LVCMOS at 144 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169178): Pin switches[0] uses I/O standard 3.3-V LVCMOS at 46 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 25
-    Info (169178): Pin switches[1] uses I/O standard 3.3-V LVCMOS at 49 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 25
-    Info (169178): Pin switches[2] uses I/O standard 3.3-V LVCMOS at 50 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 25
-    Info (169178): Pin switches[3] uses I/O standard 3.3-V LVCMOS at 51 File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 25
+    Info (169178): Pin slowClk uses I/O standard 3.3-V LVCMOS at 23 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 14
+    Info (169178): Pin mcuUartTx uses I/O standard 3.3-V LVCMOS at 10 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 18
+    Info (169178): Pin mcuI2cScl uses I/O standard 3.3-V LVCMOS at 6 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 20
+    Info (169178): Pin switches[4] uses I/O standard 3.3-V LVCMOS at 59 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 25
+    Info (169178): Pin switches[5] uses I/O standard 3.3-V LVCMOS at 60 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 25
+    Info (169178): Pin switches[6] uses I/O standard 3.3-V LVCMOS at 65 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 25
+    Info (169178): Pin switches[7] uses I/O standard 3.3-V LVCMOS at 66 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 25
+    Info (169178): Pin reset uses I/O standard 3.3-V LVCMOS at 24 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 16
+    Info (169178): Pin mainClk uses I/O standard 3.3-V LVCMOS at 22 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 13
+    Info (169178): Pin mcuI2cSda uses I/O standard 3.3-V LVCMOS at 7 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 21
+    Info (169178): Pin lsasBus[29] uses I/O standard 3.3-V LVCMOS at 142 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[28] uses I/O standard 3.3-V LVCMOS at 141 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[27] uses I/O standard 3.3-V LVCMOS at 137 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[22] uses I/O standard 3.3-V LVCMOS at 125 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[19] uses I/O standard 3.3-V LVCMOS at 119 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[18] uses I/O standard 3.3-V LVCMOS at 115 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[6] uses I/O standard 3.3-V LVCMOS at 87 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[5] uses I/O standard 3.3-V LVCMOS at 86 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[4] uses I/O standard 3.3-V LVCMOS at 85 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[3] uses I/O standard 3.3-V LVCMOS at 83 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[2] uses I/O standard 3.3-V LVCMOS at 80 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[1] uses I/O standard 3.3-V LVCMOS at 77 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[0] uses I/O standard 3.3-V LVCMOS at 76 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[31] uses I/O standard 3.3-V LVCMOS at 144 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[30] uses I/O standard 3.3-V LVCMOS at 143 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[26] uses I/O standard 3.3-V LVCMOS at 136 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[25] uses I/O standard 3.3-V LVCMOS at 135 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[24] uses I/O standard 3.3-V LVCMOS at 133 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[23] uses I/O standard 3.3-V LVCMOS at 132 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[21] uses I/O standard 3.3-V LVCMOS at 121 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[20] uses I/O standard 3.3-V LVCMOS at 120 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[17] uses I/O standard 3.3-V LVCMOS at 114 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[16] uses I/O standard 3.3-V LVCMOS at 113 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[15] uses I/O standard 3.3-V LVCMOS at 112 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[14] uses I/O standard 3.3-V LVCMOS at 111 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[13] uses I/O standard 3.3-V LVCMOS at 106 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[12] uses I/O standard 3.3-V LVCMOS at 105 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[11] uses I/O standard 3.3-V LVCMOS at 103 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[10] uses I/O standard 3.3-V LVCMOS at 101 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[9] uses I/O standard 3.3-V LVCMOS at 100 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[8] uses I/O standard 3.3-V LVCMOS at 99 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin lsasBus[7] uses I/O standard 3.3-V LVCMOS at 98 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169178): Pin switches[0] uses I/O standard 3.3-V LVCMOS at 46 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 25
+    Info (169178): Pin switches[1] uses I/O standard 3.3-V LVCMOS at 49 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 25
+    Info (169178): Pin switches[2] uses I/O standard 3.3-V LVCMOS at 50 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 25
+    Info (169178): Pin switches[3] uses I/O standard 3.3-V LVCMOS at 51 File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 25
 Warning (169064): Following 33 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
-    Info (169065): Pin mcuI2cSda has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 21
-    Info (169065): Pin lsasBus[0] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[1] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[2] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[3] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[4] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[5] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[6] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[7] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[8] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[9] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[10] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[11] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[12] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[13] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[14] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[15] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[16] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[17] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[18] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[19] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[20] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[21] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[22] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[23] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[24] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[25] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[26] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[27] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[28] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[29] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[30] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-    Info (169065): Pin lsasBus[31] has a permanently disabled output enable File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 23
-Info (144001): Generated suppressed messages file /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1168 megabytes
-    Info: Processing ended: Wed Nov 23 22:22:15 2022
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:06
+    Info (169065): Pin mcuI2cSda has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 21
+    Info (169065): Pin lsasBus[29] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[28] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[27] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[22] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[19] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[18] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[6] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[5] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[4] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[3] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[2] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[1] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[0] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[31] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[30] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[26] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[25] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[24] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[23] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[21] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[20] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[17] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[16] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[15] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[14] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[13] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[12] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[11] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[10] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[9] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[8] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Info (169065): Pin lsasBus[7] has a permanently disabled output enable File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+Info (144001): Generated suppressed messages file C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 39 warnings
+    Info: Peak virtual memory: 6360 megabytes
+    Info: Processing ended: Tue Dec  2 11:12:50 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:10
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.fit.smsg.
+The suppressed messages can be found in C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/fpga-user.fit.smsg.
 
 

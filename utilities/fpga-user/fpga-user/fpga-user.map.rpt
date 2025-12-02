@@ -1,6 +1,6 @@
 Analysis & Synthesis report for fpga-user
-Wed Nov 23 22:22:09 2022
-Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Tue Dec  2 11:12:39 2025
+Quartus Prime Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
 
 
 ---------------------
@@ -13,54 +13,62 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: myAltPll:myAltPll_inst|altpll:altpll_component
- 10. altpll Parameter Settings by Entity Instance
- 11. Port Connectivity Checks: "myAltPll:myAltPll_inst"
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  8. State Machine - |user|FMC:FMC_inst|FMC_CU:CU_inst|state
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Parameter Settings for User Entity Instance: myAltPll:myAltPll_inst|altpll:altpll_component
+ 12. Parameter Settings for User Entity Instance: FMC:FMC_inst|FMC_DP:DP_inst|regn:A_REG
+ 13. Parameter Settings for User Entity Instance: FMC:FMC_inst|FMC_DP:DP_inst|regn:Dout_REG
+ 14. Parameter Settings for User Entity Instance: FMC:FMC_inst|FMC_DP:DP_inst|regn:Din_REG
+ 15. Parameter Settings for User Entity Instance: RF:RF_inst
+ 16. altpll Parameter Settings by Entity Instance
+ 17. Port Connectivity Checks: "RF:RF_inst"
+ 18. Port Connectivity Checks: "FMC:FMC_inst"
+ 19. Port Connectivity Checks: "myAltPll:myAltPll_inst"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2021  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 23 22:22:09 2022       ;
-; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
-; Revision Name                      ; fpga-user                                   ;
-; Top-level Entity Name              ; user                                        ;
-; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 51                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Dec  2 11:12:39 2025           ;
+; Quartus Prime Version              ; 25.1std.0 Build 1129 10/21/2025 SC Lite Edition ;
+; Revision Name                      ; fpga-user                                       ;
+; Top-level Entity Name              ; user                                            ;
+; Family                             ; Cyclone 10 LP                                   ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 51                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -71,6 +79,8 @@ https://fpgasoftware.intel.com/eula.
 ; Device                                                           ; 10CL025YE144C8G    ;                    ;
 ; Top-level entity name                                            ; user               ; fpga-user          ;
 ; Family name                                                      ; Cyclone 10 LP      ; Cyclone V          ;
+; VHDL Show LMF Mapping Messages                                   ; Off                ;                    ;
+; VHDL Version                                                     ; VHDL_2008          ; VHDL_1993          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Maximum processors allowed for parallel compilation              ; All                ; All                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -80,7 +90,6 @@ https://fpgasoftware.intel.com/eula.
 ; Preserve fewer node names                                        ; On                 ; On                 ;
 ; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
 ; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                         ; Auto               ; Auto               ;
 ; Safe State Machine                                               ; Off                ; Off                ;
 ; Extract Verilog State Machines                                   ; On                 ; On                 ;
@@ -155,32 +164,37 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 14          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 14          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-14        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                             ;
-+----------------------------------+-----------------+-----------------------------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                         ; File Name with Absolute Path                                                    ; Library ;
-+----------------------------------+-----------------+-----------------------------------+---------------------------------------------------------------------------------+---------+
-; fpga-user.vhd                    ; yes             ; User VHDL File                    ; /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd               ;         ;
-; myAltPll.vhd                     ; yes             ; Auto-Found Wizard-Generated File  ; /home/max/vlsi/didattica/virtlab/hardware/fpga-user/myAltPll.vhd                ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                      ; /home/max/intelFPGA_lite/21.1/quartus/libraries/megafunctions/altpll.tdf        ;         ;
-; aglobal211.inc                   ; yes             ; Megafunction                      ; /home/max/intelFPGA_lite/21.1/quartus/libraries/megafunctions/aglobal211.inc    ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                      ; /home/max/intelFPGA_lite/21.1/quartus/libraries/megafunctions/stratix_pll.inc   ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                      ; /home/max/intelFPGA_lite/21.1/quartus/libraries/megafunctions/stratixii_pll.inc ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                      ; /home/max/intelFPGA_lite/21.1/quartus/libraries/megafunctions/cycloneii_pll.inc ;         ;
-; db/myAltPll_altpll.v             ; yes             ; Auto-Generated Megafunction       ; /home/max/vlsi/didattica/virtlab/hardware/fpga-user/db/myAltPll_altpll.v        ;         ;
-+----------------------------------+-----------------+-----------------------------------+---------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                              ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
+; myAltPll.vhd                     ; yes             ; User Wizard-Generated File   ; C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/myAltPll.vhd         ;         ;
+; ../../../LAB2/src/user.vhd       ; yes             ; User VHDL File               ; C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd                                  ;         ;
+; ../../../LAB2/src/RF.vhd         ; yes             ; User VHDL File               ; C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/RF.vhd                                    ;         ;
+; ../../../LAB2/src/regn.vhd       ; yes             ; User VHDL File               ; C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/regn.vhd                                  ;         ;
+; ../../../LAB2/src/FMC_DP.vhd     ; yes             ; User VHDL File               ; C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC_DP.vhd                                ;         ;
+; ../../../LAB2/src/FMC_CU.vhd     ; yes             ; User VHDL File               ; C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC_CU.vhd                                ;         ;
+; ../../../LAB2/src/FMC.vhd        ; yes             ; User VHDL File               ; C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC.vhd                                   ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                 ; c:/altera_lite/25.1std/quartus/libraries/megafunctions/altpll.tdf                                                         ;         ;
+; aglobal251.inc                   ; yes             ; Megafunction                 ; c:/altera_lite/25.1std/quartus/libraries/megafunctions/aglobal251.inc                                                     ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/altera_lite/25.1std/quartus/libraries/megafunctions/stratix_pll.inc                                                    ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/altera_lite/25.1std/quartus/libraries/megafunctions/stratixii_pll.inc                                                  ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/altera_lite/25.1std/quartus/libraries/megafunctions/cycloneii_pll.inc                                                  ;         ;
+; db/myaltpll_altpll.v             ; yes             ; Auto-Generated Megafunction  ; C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/db/myaltpll_altpll.v ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------+
@@ -222,6 +236,40 @@ https://fpgasoftware.intel.com/eula.
 ; |user                      ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 51   ; 0            ; |user               ; user        ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |user|FMC:FMC_inst|FMC_CU:CU_inst|state                                                                                              ;
++--------------------+-------------+----------------+-------------+--------------------+--------------+------------------+----------------+------------+
+; Name               ; state.D_OUT ; state.MEM_READ ; state.WRITE ; state.SAMPLE_WRITE ; state.SAMPLE ; state.WRITE_WAIT ; state.GET_ADDR ; state.IDLE ;
++--------------------+-------------+----------------+-------------+--------------------+--------------+------------------+----------------+------------+
+; state.IDLE         ; 0           ; 0              ; 0           ; 0                  ; 0            ; 0                ; 0              ; 0          ;
+; state.GET_ADDR     ; 0           ; 0              ; 0           ; 0                  ; 0            ; 0                ; 1              ; 1          ;
+; state.WRITE_WAIT   ; 0           ; 0              ; 0           ; 0                  ; 0            ; 1                ; 0              ; 1          ;
+; state.SAMPLE       ; 0           ; 0              ; 0           ; 0                  ; 1            ; 0                ; 0              ; 1          ;
+; state.SAMPLE_WRITE ; 0           ; 0              ; 0           ; 1                  ; 0            ; 0                ; 0              ; 1          ;
+; state.WRITE        ; 0           ; 0              ; 1           ; 0                  ; 0            ; 0                ; 0              ; 1          ;
+; state.MEM_READ     ; 0           ; 1              ; 0           ; 0                  ; 0            ; 0                ; 0              ; 1          ;
+; state.D_OUT        ; 1           ; 0              ; 0           ; 0                  ; 0            ; 0                ; 0              ; 1          ;
++--------------------+-------------+----------------+-------------+--------------------+--------------+------------------+----------------+------------+
+
+
++---------------------------------------------------------------------+
+; Registers Removed During Synthesis                                  ;
++------------------------------------------------+--------------------+
+; Register name                                  ; Reason for Removal ;
++------------------------------------------------+--------------------+
+; FMC:FMC_inst|FMC_CU:CU_inst|state.IDLE         ; Lost fanout        ;
+; FMC:FMC_inst|FMC_CU:CU_inst|state.GET_ADDR     ; Lost fanout        ;
+; FMC:FMC_inst|FMC_CU:CU_inst|state.WRITE_WAIT   ; Lost fanout        ;
+; FMC:FMC_inst|FMC_CU:CU_inst|state.SAMPLE       ; Lost fanout        ;
+; FMC:FMC_inst|FMC_CU:CU_inst|state.SAMPLE_WRITE ; Lost fanout        ;
+; FMC:FMC_inst|FMC_CU:CU_inst|state.WRITE        ; Lost fanout        ;
+; FMC:FMC_inst|FMC_CU:CU_inst|state.MEM_READ     ; Lost fanout        ;
+; FMC:FMC_inst|FMC_CU:CU_inst|state.D_OUT        ; Lost fanout        ;
+; Total Number of Removed Registers = 8          ;                    ;
++------------------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -613,6 +661,50 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FMC:FMC_inst|FMC_DP:DP_inst|regn:A_REG ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                             ;
+; rising         ; true  ; Enumerated                                                 ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FMC:FMC_inst|FMC_DP:DP_inst|regn:Dout_REG ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                                ;
+; rising         ; true  ; Enumerated                                                    ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FMC:FMC_inst|FMC_DP:DP_inst|regn:Din_REG ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; n              ; 16    ; Signed Integer                                               ;
+; rising         ; false ; Enumerated                                                   ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RF:RF_inst ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; word_size      ; 16    ; Signed Integer                 ;
+; address_size   ; 16    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------------+
 ; altpll Parameter Settings by Entity Instance                                   ;
 +-------------------------------+------------------------------------------------+
@@ -630,12 +722,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+------------------------------------------------+
 
 
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "RF:RF_inst"                                                                            ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; dataout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FMC:FMC_inst"                                                                          ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; ad      ; Bidir  ; Warning  ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; mem_din ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "myAltPll:myAltPll_inst"                                                               ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port   ; Type   ; Severity ; Details                                                                             ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
-; c0     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; locked ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -670,27 +780,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Wed Nov 23 22:22:03 2022
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Processing started: Tue Dec  2 11:12:29 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fpga-user -c fpga-user
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file fpga-user.vhd
-    Info (12022): Found design unit 1: user-behavioural File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 31
-    Info (12023): Found entity 1: user File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 9
+Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file myaltpll.vhd
+    Info (12022): Found design unit 1: myaltpll-SYN File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/myAltPll.vhd Line: 54
+    Info (12023): Found entity 1: myAltPll File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/myAltPll.vhd Line: 43
+Info (12021): Found 2 design units, including 1 entities, in source file /users/skipi/desktop/leo/polito/anno4/semestre1/sdi/sdi_rr_2025-2026/lab2/src/user.vhd
+    Info (12022): Found design unit 1: user-behavioural File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 31
+    Info (12023): Found entity 1: user File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /users/skipi/desktop/leo/polito/anno4/semestre1/sdi/sdi_rr_2025-2026/lab2/src/rf.vhd
+    Info (12022): Found design unit 1: RF-Behavior File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/RF.vhd Line: 27
+    Info (12023): Found entity 1: RF File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/RF.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/skipi/desktop/leo/polito/anno4/semestre1/sdi/sdi_rr_2025-2026/lab2/src/regn.vhd
+    Info (12022): Found design unit 1: regn-Behavior File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/regn.vhd Line: 15
+    Info (12023): Found entity 1: regn File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/regn.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /users/skipi/desktop/leo/polito/anno4/semestre1/sdi/sdi_rr_2025-2026/lab2/src/fmc_dp.vhd
+    Info (12022): Found design unit 1: FMC_DP-Behavioral File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC_DP.vhd Line: 22
+    Info (12023): Found entity 1: FMC_DP File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC_DP.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/skipi/desktop/leo/polito/anno4/semestre1/sdi/sdi_rr_2025-2026/lab2/src/fmc_cu.vhd
+    Info (12022): Found design unit 1: FMC_CU-Behavioral File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC_CU.vhd Line: 23
+    Info (12023): Found entity 1: FMC_CU File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC_CU.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/skipi/desktop/leo/polito/anno4/semestre1/sdi/sdi_rr_2025-2026/lab2/src/fmc.vhd
+    Info (12022): Found design unit 1: FMC-Behavioral File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC.vhd Line: 25
+    Info (12023): Found entity 1: FMC File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC.vhd Line: 5
 Info (12127): Elaborating entity "user" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at fpga-user.vhd(19): used implicit default value for signal "mcuUartRx" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 19
-Warning (10036): Verilog HDL or VHDL warning at fpga-user.vhd(33): object "clk" assigned a value but never read File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 33
-Warning (10036): Verilog HDL or VHDL warning at fpga-user.vhd(34): object "pllLock" assigned a value but never read File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 34
-Warning (10036): Verilog HDL or VHDL warning at fpga-user.vhd(36): object "lsasBusIn" assigned a value but never read File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 36
-Warning (10541): VHDL Signal Declaration warning at fpga-user.vhd(37): used implicit default value for signal "lsasBusOut" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 37
-Warning (10540): VHDL Signal Declaration warning at fpga-user.vhd(38): used explicit default value for signal "lsasBusEn" because signal was never assigned a value File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 38
-Warning (12125): Using design file myAltPll.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: myaltpll-SYN File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/myAltPll.vhd Line: 54
-    Info (12023): Found entity 1: myAltPll File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/myAltPll.vhd Line: 43
-Info (12128): Elaborating entity "myAltPll" for hierarchy "myAltPll:myAltPll_inst" File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 60
-Info (12128): Elaborating entity "altpll" for hierarchy "myAltPll:myAltPll_inst|altpll:altpll_component" File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/myAltPll.vhd Line: 141
-Info (12130): Elaborated megafunction instantiation "myAltPll:myAltPll_inst|altpll:altpll_component" File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/myAltPll.vhd Line: 141
-Info (12133): Instantiated megafunction "myAltPll:myAltPll_inst|altpll:altpll_component" with the following parameter: File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/myAltPll.vhd Line: 141
+Warning (10541): VHDL Signal Declaration warning at user.vhd(19): used implicit default value for signal "mcuUartRx" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 19
+Warning (10036): Verilog HDL or VHDL warning at user.vhd(34): object "pllLock" assigned a value but never read File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 34
+Warning (10541): VHDL Signal Declaration warning at user.vhd(87): used implicit default value for signal "sMem_Dout" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 87
+Warning (10036): Verilog HDL or VHDL warning at user.vhd(87): object "sMem_Din" assigned a value but never read File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 87
+Info (12128): Elaborating entity "myAltPll" for hierarchy "myAltPll:myAltPll_inst" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 100
+Info (12128): Elaborating entity "altpll" for hierarchy "myAltPll:myAltPll_inst|altpll:altpll_component" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/myAltPll.vhd Line: 141
+Info (12130): Elaborated megafunction instantiation "myAltPll:myAltPll_inst|altpll:altpll_component" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/myAltPll.vhd Line: 141
+Info (12133): Instantiated megafunction "myAltPll:myAltPll_inst|altpll:altpll_component" with the following parameter: File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/myAltPll.vhd Line: 141
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "1"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -746,36 +869,81 @@ Info (12133): Instantiated megafunction "myAltPll:myAltPll_inst|altpll:altpll_co
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "self_reset_on_loss_lock" = "OFF"
     Info (12134): Parameter "width_clock" = "5"
-Info (12021): Found 1 design units, including 1 entities, in source file db/myAltPll_altpll.v
-    Info (12023): Found entity 1: myAltPll_altpll File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/db/myAltPll_altpll.v Line: 31
-Info (12128): Elaborating entity "myAltPll_altpll" for hierarchy "myAltPll:myAltPll_inst|altpll:altpll_component|myAltPll_altpll:auto_generated" File: /home/max/intelFPGA_lite/21.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
+Info (12021): Found 1 design units, including 1 entities, in source file db/myaltpll_altpll.v
+    Info (12023): Found entity 1: myAltPll_altpll File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/db/myaltpll_altpll.v Line: 31
+Info (12128): Elaborating entity "myAltPll_altpll" for hierarchy "myAltPll:myAltPll_inst|altpll:altpll_component|myAltPll_altpll:auto_generated" File: c:/altera_lite/25.1std/quartus/libraries/megafunctions/altpll.tdf Line: 898
+Info (12128): Elaborating entity "FMC" for hierarchy "FMC:FMC_inst" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 116
+Info (12128): Elaborating entity "FMC_CU" for hierarchy "FMC:FMC_inst|FMC_CU:CU_inst" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC.vhd Line: 64
+Warning (10492): VHDL Process Statement warning at FMC_CU.vhd(29): signal "RST_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC_CU.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at FMC_CU.vhd(107): signal "NOE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC_CU.vhd Line: 107
+Warning (10492): VHDL Process Statement warning at FMC_CU.vhd(107): signal "NE1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC_CU.vhd Line: 107
+Info (12128): Elaborating entity "FMC_DP" for hierarchy "FMC:FMC_inst|FMC_DP:DP_inst" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC.vhd Line: 81
+Info (12128): Elaborating entity "regn" for hierarchy "FMC:FMC_inst|FMC_DP:DP_inst|regn:A_REG" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC_DP.vhd Line: 36
+Warning (10492): VHDL Process Statement warning at regn.vhd(19): signal "Resetn" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/regn.vhd Line: 19
+Info (12128): Elaborating entity "regn" for hierarchy "FMC:FMC_inst|FMC_DP:DP_inst|regn:Din_REG" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/FMC_DP.vhd Line: 56
+Warning (10492): VHDL Process Statement warning at regn.vhd(19): signal "Resetn" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/regn.vhd Line: 19
+Info (12128): Elaborating entity "RF" for hierarchy "RF:RF_inst" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 137
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following PLL node(s):
-        Warning (14320): Synthesized away node "myAltPll:myAltPll_inst|altpll:altpll_component|myAltPll_altpll:auto_generated|wire_pll1_clk[0]" File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/db/myAltPll_altpll.v Line: 93
+        Warning (14320): Synthesized away node "myAltPll:myAltPll_inst|altpll:altpll_component|myAltPll_altpll:auto_generated|wire_pll1_clk[0]" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/utilities/fpga-user/fpga-user/db/myaltpll_altpll.v Line: 93
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "mcuI2cSda" has no driver File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 21
+    Warning (13040): bidirectional pin "lsasBus[31]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[30]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[26]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[25]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[24]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[23]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[21]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[20]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[17]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[16]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[15]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[14]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[13]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[12]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[11]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[10]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[9]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[8]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[7]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "mcuI2cSda" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 21
+    Warning (13040): bidirectional pin "lsasBus[29]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[28]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[27]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[22]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[19]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[18]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[6]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[5]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[4]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[3]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[2]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[1]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
+    Warning (13040): bidirectional pin "lsasBus[0]" has no driver File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 23
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "mcuUartRx" is stuck at GND File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 19
+    Warning (13410): Pin "mcuUartRx" is stuck at GND File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 19
+Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 9 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "mainClk" File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 13
-    Warning (15610): No output dependent on input pin "slowClk" File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 14
-    Warning (15610): No output dependent on input pin "reset" File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 16
-    Warning (15610): No output dependent on input pin "mcuUartTx" File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 18
-    Warning (15610): No output dependent on input pin "mcuI2cScl" File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 20
-    Warning (15610): No output dependent on input pin "switches[4]" File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 25
-    Warning (15610): No output dependent on input pin "switches[5]" File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 25
-    Warning (15610): No output dependent on input pin "switches[6]" File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 25
-    Warning (15610): No output dependent on input pin "switches[7]" File: /home/max/vlsi/didattica/virtlab/hardware/fpga-user/fpga-user.vhd Line: 25
+    Warning (15610): No output dependent on input pin "slowClk" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 14
+    Warning (15610): No output dependent on input pin "mcuUartTx" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 18
+    Warning (15610): No output dependent on input pin "mcuI2cScl" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 20
+    Warning (15610): No output dependent on input pin "switches[4]" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 25
+    Warning (15610): No output dependent on input pin "switches[5]" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 25
+    Warning (15610): No output dependent on input pin "switches[6]" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 25
+    Warning (15610): No output dependent on input pin "switches[7]" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 25
+    Warning (15610): No output dependent on input pin "reset" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 16
+    Warning (15610): No output dependent on input pin "mainClk" File: C:/Users/skipi/Desktop/Leo/PoliTo/Anno4/Semestre1/SDI/SDI_RR_2025-2026/LAB2/src/user.vhd Line: 13
 Info (21057): Implemented 51 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 5 output pins
     Info (21060): Implemented 33 bidirectional pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 693 megabytes
-    Info: Processing ended: Wed Nov 23 22:22:09 2022
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:16
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 59 warnings
+    Info: Peak virtual memory: 4896 megabytes
+    Info: Processing ended: Tue Dec  2 11:12:39 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:24
 
 
