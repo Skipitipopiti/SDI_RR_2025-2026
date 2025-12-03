@@ -14,7 +14,7 @@ end regn;
 
 architecture Behavior of regn is
 begin
-	process (Clock)
+	process (Clock, Resetn)
 	begin
 		if (Resetn = '0') then
 			Q <= (others => '0');

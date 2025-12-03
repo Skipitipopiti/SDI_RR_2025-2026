@@ -16,7 +16,10 @@ architecture behavior of tb_FMC is
             NE1     : in  std_logic;
             NOE     : in  std_logic;
             NWE     : in  std_logic;
-            AD      : inout  std_logic_vector(15 downto 0);
+
+            AD_in   : in  std_logic_vector(15 downto 0);
+            AD_out  : out std_logic_vector(15 downto 0);
+            Din_OE  : out std_logic; -- tri-state
 
             CS      : out std_logic;
             RD      : out std_logic;
@@ -53,12 +56,18 @@ architecture behavior of tb_FMC is
     signal RST_n : std_logic := '1';
     signal NE1, NOE, NWE : std_logic;
     signal CS, RD, WR   : std_logic;
-    signal AD, Mem_Dout, Mem_Din, Mem_A : std_logic_vector(15 downto 0);
+    signal Din_OE : std_logic;
+    signal AD, AD_Out, Mem_Dout, Mem_Din, Mem_A : std_logic_vector(15 downto 0);
+    signal dMem_Dout : std_logic_vector(15 downto 0);
 
     constant Tck : time := 100 ns;
     constant tco : time := 5 ns;
 
 begin
+    AD <= AD_Out when Din_OE = '1' else (others => 'Z');
+
+    dMem_Dout <= Mem_Dout after 5*tco;
+
     DUT: FMC
         port map (
             RST_n   => RST_n,
@@ -66,13 +75,16 @@ begin
             NE1     => NE1,
             NOE     => NOE,
             NWE     => NWE,
-            AD      => AD,
+
+            AD_In   => AD,
+            AD_Out  => AD_Out,
+            Din_OE  => Din_OE,
 
             CS      => CS,
             RD      => RD,
             WR      => WR,
 
-            Mem_Dout => Mem_Dout,
+            Mem_Dout => dMem_Dout,
             Mem_Din  => Mem_Din,
             Mem_A    => Mem_A
         );

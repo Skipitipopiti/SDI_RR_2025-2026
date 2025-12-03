@@ -33,7 +33,6 @@ architecture behavioural of user is
 	signal clk: std_logic;
 	signal pllLock: std_logic;
 
-
 	component myAltPll
 		PORT
 		(
@@ -52,7 +51,10 @@ architecture behavioural of user is
 	        NE1     : in  std_logic;
 	        NOE     : in  std_logic;
 	        NWE     : in  std_logic;
-	        AD      : inout  std_logic_vector(15 downto 0);
+
+			AD_in   : in  std_logic_vector(15 downto 0);
+			AD_out  : out std_logic_vector(15 downto 0);
+			Din_OE  : out std_logic; -- tri-state
 
 	        CS      : out std_logic;
 	        RD      : out std_logic;
@@ -66,8 +68,8 @@ architecture behavioural of user is
 
 	component RF
 	    generic (
-	        WORD_SIZE : natural := 16;
-	        ADDRESS_SIZE : natural := 4
+	        WORD_SIZE : natural;
+	        ADDRESS_SIZE : natural
 	    );
 	    port (
 	        Clock : in std_logic;
@@ -84,11 +86,15 @@ architecture behavioural of user is
 	end component;
 
 	signal sCS, sRD, sWR : std_logic;
-	signal sMem_Dout, sMem_Din : std_logic_vector(15 downto 0);
-	signal sMem_A : std_logic_vector(15 downto 0);
+	signal sCLK, sNE1, sNOE, sNWE : std_logic;
+	signal sMem_Dout, sMem_Din, sMem_A : std_logic_vector(15 downto 0);
 
-	signal sAD : std_logic_vector(15 downto 0);
+	signal AD_in, AD_out : std_logic_vector(15 downto 0);
+	signal sDin_OE : std_logic;
 	
+	-- Address mapping ottenuto usando la tabella nel lab2.pdf
+	constant AD_MAP : integer_vector(15 downto 0) :=
+		(26, 25, 24, 15, 14, 13, 12, 11, 10, 9, 8, 7, 17, 16, 31, 30);
 begin
 
 	sAD <= lsasBus(30 to 31) & lsasBus(16 to 17) & lsasBus(7 to 15) & lsasBus(24 to 26);
@@ -108,20 +114,35 @@ begin
 --* LEDs
 --**********************************************************************************
 
-	leds <= switches( 3 downto 0 );
+	leds <= not switches( 3 downto 0 );
 	
 --**********************************************************************************
 --* FMC	
 --**********************************************************************************
+
+	AD_InOutBus:
+	for i in AD_in'range generate
+		AD_in(i) <= lsasBus(AD_MAP(i));
+		lsasBus(AD_MAP(i)) <= AD_out(i) when sDin_OE else 'Z';
+	end generate;
+
+	sNE1 <= lsasBus(23);
+	sNOE <= lsasBus(20);
+	sNWE <= lsasBus(21);
+	sCLK <= lsasBus(19);
+
 	FMC_inst : FMC
 		port map (
-			CLK     => clk,
+			CLK     => sCLK,
 			RST_n   => reset, 
 
-			NE1     => lsasBus(23),
-			NOE     => lsasBus(20),
-			NWE     => lsasBus(21),
-			AD      => sAD,
+			NE1     => sNE1,
+			NOE     => sNOE,
+			NWE     => sNWE,
+
+			AD_In	=> AD_In,
+			AD_Out	=> AD_Out,
+			Din_OE  => sDin_OE,
 
 			CS      => sCS,
 			RD      => sRD,
@@ -134,22 +155,22 @@ begin
 --**********************************************************************************
 --* Register File
 --**********************************************************************************
+
 	RF_inst : RF
 		generic map (
 			WORD_SIZE => 16,
 			ADDRESS_SIZE => 16
 		)
 		port map (
-			Clock => clk,
+			Clock => sCLK,
 
 			ChipSelect => sCS,
-
 			Read  => sRD,
 			Write => sWR,
 
-			DataIn  => sMem_Dout,
-			DataOut => sMem_Din,
-			Address => sMem_A
+			DataIn  => sMem_Din,
+			DataOut => sMem_Dout,
+			Address => sMem_A(7 downto 0)
 		);
 	
 	

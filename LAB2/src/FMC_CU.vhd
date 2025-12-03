@@ -24,7 +24,7 @@ architecture Behavioral of FMC_CU is
     type state_type is (IDLE, GET_ADDR, WRITE_WAIT, SAMPLE, SAMPLE_WRITE, WRITE, MEM_READ, D_OUT);
     signal state : state_type;
 begin
-    process (CLK)
+    process (CLK, RST_n)
     begin
         if RST_n = '0' then
             state <= IDLE;
@@ -73,7 +73,7 @@ begin
     end process;
 
     -- Output logic
-    process (state) is
+    process (state, NE1, NOE) is
     begin
         CS <= '0';
         WR <= '0';
