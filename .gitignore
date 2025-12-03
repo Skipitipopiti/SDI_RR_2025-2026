@@ -1,14 +1,17 @@
 # Cartelle work
 **/work/
+utilities/fpga-user/*
 
 # IDE/Editor
 .vscode/
 .idea/
 *.swp
 *.swo
+*.bak
 
 # Modelsim
 *.wlf
+*.ini
 
 # Sistemi operativi
 .DS_Store
