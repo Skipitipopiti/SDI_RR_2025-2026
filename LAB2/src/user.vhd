@@ -11,14 +11,10 @@ entity user is
 	(
 		-- Main clock inputs
 		mainClk	: in std_logic;
-		slowClk	: in std_logic;
+		
 		-- Main reset input
 		reset		: in std_logic;
-		-- MCU interface (UART, I2C)
-		mcuUartTx	: in std_logic;
-		mcuUartRx	: out std_logic;
-		mcuI2cScl	: in std_logic;
-		mcuI2cSda	: inout std_logic;
+		
 		-- Logic state analyzer/stimulator
 		lsasBus	: inout std_logic_vector( 0 to 31 );
 		-- Dip switches
@@ -29,20 +25,6 @@ entity user is
 end user;
 
 architecture behavioural of user is
-
-	signal clk: std_logic;
-	signal pllLock: std_logic;
-
-	component myAltPll
-		PORT
-		(
-			areset		: IN STD_LOGIC  := '0';
-			inclk0		: IN STD_LOGIC  := '0';
-			c0		: OUT STD_LOGIC ;
-			locked		: OUT STD_LOGIC 
-		);
-	end component;
-
 	component FMC
 	    port (
 	        CLK     : in  std_logic;
@@ -97,19 +79,6 @@ architecture behavioural of user is
 		(26, 25, 24, 15, 14, 13, 12, 11, 10, 9, 8, 7, 17, 16, 31, 30);
 begin
 
-	sAD <= lsasBus(30 to 31) & lsasBus(16 to 17) & lsasBus(7 to 15) & lsasBus(24 to 26);
-
---**********************************************************************************
---* Main clock PLL
---**********************************************************************************
-
-	myAltPll_inst : myAltPll PORT MAP (
-		areset	 => reset,
-		inclk0	 => mainClk,
-		c0	 => clk,
-		locked	 => pllLock
-	);
-
 --**********************************************************************************
 --* LEDs
 --**********************************************************************************
@@ -152,6 +121,7 @@ begin
 			Mem_Din  => sMem_Din,
 			Mem_A    => sMem_A
 		);
+	
 --**********************************************************************************
 --* Register File
 --**********************************************************************************
@@ -159,7 +129,7 @@ begin
 	RF_inst : RF
 		generic map (
 			WORD_SIZE => 16,
-			ADDRESS_SIZE => 16
+			ADDRESS_SIZE => 15
 		)
 		port map (
 			Clock => sCLK,
@@ -170,7 +140,7 @@ begin
 
 			DataIn  => sMem_Din,
 			DataOut => sMem_Dout,
-			Address => sMem_A(7 downto 0)
+			Address => sMem_A(14 downto 0)
 		);
 	
 	

@@ -66,7 +66,7 @@ architecture behavior of tb_FMC is
 begin
     AD <= AD_Out when Din_OE = '1' else (others => 'Z');
 
-    dMem_Dout <= Mem_Dout after 5*tco;
+    dMem_Dout <= Mem_Dout after 4*tco;
 
     DUT: FMC
         port map (
@@ -207,6 +207,22 @@ begin
 
         wait for 1.5*Tck;
 
+	-- LETTURA 3
+        wait for Tck; -- fronte di discesa
+
+        NE1 <= '0' after tco;
+        AD <= x"AAAC" after 3*tco;
+
+        wait for 2*Tck;
+
+        AD <= (others => 'Z');
+        NOE <= '0' after 3*tco;
+
+        wait for 2.5*Tck;
+
+        NE1 <= '1' after 2*tco;
+        NOE <= '1' after 1*tco;
+
         -- LETTURA 2
         wait for Tck; -- fronte di discesa
 
@@ -224,22 +240,6 @@ begin
         NOE <= '1' after 1*tco;
 
         wait for 1.5*Tck;
-
-        -- LETTURA 3
-        wait for Tck; -- fronte di discesa
-
-        NE1 <= '0' after tco;
-        AD <= x"AAAC" after 3*tco;
-
-        wait for 2*Tck;
-
-        AD <= (others => 'Z');
-        NOE <= '0' after 3*tco;
-
-        wait for 2.5*Tck;
-
-        NE1 <= '1' after 2*tco;
-        NOE <= '1' after 1*tco;
 
         -- FINE SIMULAZIONE
         wait for 5.5*Tck;

@@ -27,23 +27,27 @@ end entity;
 architecture Behavior of RF is
     type reg_file_t is array(0 to 2**ADDRESS_SIZE-1) of std_logic_vector(WORD_SIZE-1 downto 0);
     signal reg_file : reg_file_t;
-
-    signal addr : natural;
+	
+	signal DataOut_reg : std_logic_vector(WORD_SIZE-1 downto 0);
 
 begin
-    addr <= to_integer(unsigned(Address));
-    
     MEM: process(Clock) 
+		variable addr : integer;
     begin
         if rising_edge(Clock) then
+			addr := to_integer(unsigned(Address));
+			
             if ChipSelect = '1' then
-                if Read = '1' then
-                    DataOut <= reg_file(addr);
-                end if;
                 if Write = '1' then
                     reg_file(addr) <= DataIn;
+                end if;
+				
+				if Read = '1' then
+                    DataOut_reg <= reg_file(addr);
                 end if;
             end if;
         end if;
     end process MEM;
+	
+	DataOut <= DataOut_reg;
 end architecture;

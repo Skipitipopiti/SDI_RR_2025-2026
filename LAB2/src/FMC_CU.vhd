@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity FMC_CU is
     port (
-        RST_n     : in  std_logic; -- async reset
+        RST_n   : in  std_logic; -- async reset
         CLK     : in  std_logic;
         NE1     : in  std_logic;
         NOE     : in  std_logic;
@@ -21,7 +21,7 @@ entity FMC_CU is
 end FMC_CU;
 
 architecture Behavioral of FMC_CU is
-    type state_type is (IDLE, GET_ADDR, WRITE_WAIT, SAMPLE, SAMPLE_WRITE, WRITE, MEM_READ, D_OUT);
+    type state_type is (IDLE, GET_ADDR, WRITE_WAIT, SAMPLE, SAMPLE_WRITE, MEM_WRITE, MEM_READ, D_OUT);
     signal state : state_type;
 begin
     process (CLK, RST_n)
@@ -48,15 +48,15 @@ begin
                     if NE1 = '0' then
                         state <= SAMPLE_WRITE;
                     else
-                        state <= WRITE;
+                        state <= MEM_WRITE;
                     end if;
                 when SAMPLE_WRITE =>
                     if NE1 = '0' then
                         state <= SAMPLE_WRITE;
                     else
-                        state <= WRITE;
+                        state <= MEM_WRITE;
                     end if;
-                when WRITE =>
+                when MEM_WRITE =>
                     state <= IDLE;
                 when MEM_READ =>
                     state <= D_OUT;
@@ -96,7 +96,7 @@ begin
                 Dout_En <= '1';
                 CS <= '1';
                 WR <= '1';
-            when WRITE =>
+            when MEM_WRITE =>
                 CS <= '1';
                 WR <= '1';
             when MEM_READ =>
