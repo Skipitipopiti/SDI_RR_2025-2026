@@ -21,9 +21,32 @@ entity FMC_CU is
 end FMC_CU;
 
 architecture Behavioral of FMC_CU is
+    component regn is
+        generic (N : integer; RISING : boolean := true);
+        port (
+            R 					  : in std_logic_vector(N-1 downto 0);
+            Clock, Resetn, Enable : in std_logic; -- rst sincrono, enable attivo alto
+            Q 					  : out std_logic_vector(N-1 downto 0)
+        );
+    end component;
+
     type state_type is (IDLE, GET_ADDR, WRITE_WAIT, SAMPLE, SAMPLE_WRITE, MEM_WRITE, MEM_READ, D_OUT);
     signal state : state_type;
+
+    signal NE1_rising_stable : std_logic;
+    signal NE1_rising_stable_en : std_logic;
 begin
+    NE1_REG : regn
+        generic map (N => 1, RISING => true)
+        port map (
+            R(0)    => NE1,
+            Clock   => CLK,
+            Resetn  => RST_n,
+            Enable  => NE1_rising_stable_en,
+            Q(0)    => NE1_rising_stable
+        );
+
+    -- State transition process
     process (CLK, RST_n)
     begin
         if RST_n = '0' then
@@ -31,7 +54,9 @@ begin
         elsif falling_edge(CLK) then
             case state is
                 when IDLE =>
-                    if NE1 = '0' then
+                    -- usiamo un segnale stabile per evitare di campionare al fronte
+                    -- in cui NE1 cambia
+                    if NE1_rising_stable = '0' then
                         state <= GET_ADDR;
                     else
                         state <= IDLE;
@@ -82,10 +107,11 @@ begin
         A_En <= '0';
         Din_En <= '0';
         Din_OE <= '0';
+        NE1_rising_stable_en <= '0';
 
         case state is
             when IDLE =>
-                null;
+                NE1_rising_stable_en <= '1';
             when GET_ADDR =>
                 A_En <= '1';
             when WRITE_WAIT =>

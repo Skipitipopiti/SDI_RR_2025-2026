@@ -53,17 +53,17 @@ begin
     );
 
     -- Bypass
-    AD_out <= Mem_Dout;
+    -- AD_out <= Mem_Dout;
 
-    -- Din_REG : regn generic map(N => 16, RISING => false)
-    -- port map
-    -- (
-        -- R => Mem_Dout,
-        -- Clock => CLK,
-        -- Resetn => RST_n,
-        -- Enable => Din_En,
-        -- Q => open
-    -- );
+    Din_REG : regn generic map(N => 16, RISING => false)
+    port map
+    (
+        R => Mem_Dout,
+        Clock => CLK,
+        Resetn => RST_n,
+        Enable => Din_En,
+        Q => AD_out
+    );
 
 end Behavioral;
 
